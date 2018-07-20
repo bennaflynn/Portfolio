@@ -4,8 +4,16 @@
   "description": "The personal website of Ben Flynn, meant to display the portfolio projects, blog posts, and general info pertaining to Ben",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "author": "Ben Flynn",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.4"
+  }
 }
