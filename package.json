@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "The personal website of Ben Flynn, meant to display the portfolio projects, blog posts, and general info pertaining to Ben",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Flynn",
+  "license": "ISC"
+}
