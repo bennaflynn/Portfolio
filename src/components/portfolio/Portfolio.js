@@ -7,7 +7,7 @@ class Portfolio extends Component {
     }
 
     redirectToPiece(loc) {
-        window.location.href = loc
+        window.location = loc
     }
 
     render() {
