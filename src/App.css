@@ -10,3 +10,9 @@ body {
 .content {
     padding:0;
 }
+.app-header {
+    padding:0;
+}
+.row {
+    margin: 0;
+}

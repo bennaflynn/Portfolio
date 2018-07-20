@@ -8,12 +8,19 @@ class SideBar extends Component {
     constructor(props) {
         super(props);
 
-        const {links} = this.props;
+        const {links, handleLinkClick} = this.props;
 
         this.state = {
             //the links passed from the parent
             displayLinks : links
         }
+
+        //bind the functions
+        this.changeLink = this.changeLink.bind(this);
+    }
+
+    changeLink(id) {
+        this.props.handleLinkClick(id);
     }
 
     render() {
@@ -23,11 +30,12 @@ class SideBar extends Component {
             <div className='sidebar'>
                 <ul>
                     {displayLinks.map((dl) => {
-                        console.log(dl);
+                        
                         return(                       
                         <li 
-                        key={dl.name}
-                        className='portfolio-link'>
+                        key={dl.id}
+                        className='portfolio-link'
+                        onClick={() => this.changeLink(dl.id)}>
                             {dl.name}
                         </li>
                         );
